@@ -49,7 +49,7 @@ const StartGameScreen = (props) => {
       <Card style={styles.summeryCard}>
         <Text>You selected</Text>
         <NumberContainer>{selectedNumber}</NumberContainer>
-        <Button title="Start Game" onPress={() => onStartGame(selectedNumber)}/>
+        <Button title="Start Game" onPress={() => props.onStartGame(selectedNumber)}/>
       </Card>
     );
   }
